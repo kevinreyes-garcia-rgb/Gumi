@@ -33,7 +33,7 @@
 
 <div align="center">
 
-  <img src="https://inmiku.infinityfreeapp.com/u/ImMiku_8140da78.gif" alt="MikuQuiz Gameplay GIF" width="80%" style="border-radius: 8px; border: 2px solid #39C5BB;"/>
+  <img src="https://inmiku.infinityfreeapp.com/u/ImMiku_30c8e634.gif" alt="MikuQuiz Gameplay GIF" width="80%" style="border-radius: 8px; border: 2px solid #39C5BB;"/>
 
   <p><i>Vista previa del Chat de Gumi y animaciones en pantalla.</i></p>
 
