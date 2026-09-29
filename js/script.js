@@ -1,21 +1,21 @@
 /* ================================================================
    CHAT GUMI IA — GitHub Pages V2 (todo en el navegador, localStorage)
    Creado por k4927789-wq
-   Arreglado: key correcta (proyectsV2) + historial de conversación
+   Arreglado: key correcta (Gumi) + historial de conversación
    ================================================================ */
 
 /* ===== CADA IA CON SU PROPIA API, SUS RUTAS Y SU KEY ===== */
 const AI_MODELS = {
   gemini: {
     name: 'Gemini',
-    key: 'proyectsV2',
+    key: 'Gumi',
     urls: [
       'https://api.stellarwa.xyz/ai/gemini'
     ]
   },
   chatgpt: {
     name: 'ChatGPT',
-    key: 'proyectsV2',
+    key: 'Gumi',
     urls: [
       'https://api.stellarwa.xyz/ai/chatgpt',
       'https://api.stellarwa.xyz/ai/gpt'
@@ -23,7 +23,7 @@ const AI_MODELS = {
   },
   copilot: {
     name: 'Copilot',
-    key: 'proyectsV2',
+    key: 'Gumi',
     urls: [
       'https://api.stellarwa.xyz/ai/copilot',
       'https://api.stellarwa.xyz/ai/chatgpt'
