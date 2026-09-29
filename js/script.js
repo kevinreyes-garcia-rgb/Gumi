@@ -10,14 +10,14 @@ const AI_MODELS = {
     name: 'Gemini',
     key: 'proyectsV2',
     urls: [
-      'https://api.stellarwa.xyz/ai/gemini?key=api-ih0fo'
+      'https://api.stellarwa.xyz/ai/gemini'
     ]
   },
   chatgpt: {
     name: 'ChatGPT',
     key: 'proyectsV2',
     urls: [
-      'https://api.stellarwa.xyz/ai/chatgpt?key=api-ih0fo',
+      'https://api.stellarwa.xyz/ai/chatgpt',
       'https://api.stellarwa.xyz/ai/gpt'
     ]
   },
@@ -25,7 +25,7 @@ const AI_MODELS = {
     name: 'Copilot',
     key: 'proyectsV2',
     urls: [
-      'https://api.stellarwa.xyz/ai/copilot?key=api-ih0fo',
+      'https://api.stellarwa.xyz/ai/copilot',
       'https://api.stellarwa.xyz/ai/chatgpt'
     ]
   }
