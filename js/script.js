@@ -20,14 +20,6 @@ const AI_MODELS = {
       'https://api.stellarwa.xyz/ai/chatgpt?key=api-ih0fo',
       'https://api.stellarwa.xyz/ai/gpt'
     ]
-       },
-  chatgpt: {
-    name: 'DeepSeek',
-    key: 'proyectsV2',
-    urls: [
-      'https://api.stellarwa.xyz/ai/deepseek?key=api-ih0fo',
-      'https://api.stellarwa.xyz/ai/deepseek'
-     ]
   },
   copilot: {
     name: 'Copilot',
