@@ -3,13 +3,13 @@
   <!-- Logo principal -->
   <img src="https://inmiku.infinityfreeapp.com/u/ImMiku_dd7523ac.jpeg" alt="MikuQuiz Icon" width="120" style="border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"/>
 
-  # MikuQuiz
+  # Gumi AI
 
   **Plataforma de Gumi Ai Interactivo Temático**
 
   <!-- Banner principal -->
   <br/>
-  <img src="https://files.catbox.moe/jpurxi.jpeg" alt="MikuQuiz Banner" width="100%" style="border-radius: 10px;"/>
+  <img src="https://inmiku.infinityfreeapp.com/u/ImMiku_95cf8c8a.jpeg" alt="Gumi AI Banner" width="100%" style="border-radius: 10px;"/>
   <br/><br/>
 
   [![GitHub release](https://img.shields.io/badge/Release-v1.0.0-39C5BB?style=for-the-badge)](https://github.com/)
