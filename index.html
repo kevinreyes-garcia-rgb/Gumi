@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Gumi IA — Creado por k4927789-wq</title>
+<link rel="icon" href="https://inmiku.infinityfreeapp.com/u/ImMiku_adddca1a.jpg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- APP (siempre montada; el login va encima como capa) -->
+<div id="app">
+  <header>
+    <img src="https://inmiku.infinityfreeapp.com/u/ImMiku_adddca1a.jpg" alt="Gumi">
+    <div class="info"><h2>Gumi ♪</h2><span><i id="statusDot"></i> <span id="modelName">Gemini</span></span></div>
+    <div class="header-right">
+      <div id="userBadge"><img id="badgeAvatar" src="https://inmiku.infinityfreeapp.com/u/ImMiku_adddca1a.jpg" style="width:26px;height:26px;border-radius:50%;vertical-align:middle;border:1px solid var(--accent);cursor:pointer" onclick="changeAvatar()" title="Cambiar mi foto"> <b id="badgeName">invitado</b></div>
+      <button class="hbtn" onclick="testAI()" title="Probar conexión con la IA">🔌 Probar</button>
+      <select id="modelSel">
+        <option value="gemini">Gemini</option>
+        <option value="chatgpt">ChatGPT</option>
+        <option value="copilot">Copilot</option>
+      </select>
+      <button class="hbtn" onclick="downloadChat()">⬇ Chats</button>
+      <button class="hbtn" onclick="clearChat()">🗑 Limpiar</button>
+      <button class="hbtn" onclick="logout()">Salir</button>
+    </div>
+  </header>
+
+  <div id="chatBox"></div>
+  <div id="attachList"></div>
+
+  <div id="inputBar">
+    <button class="ibtn" title="Enviar imagen" onclick="pickImage()">🖼️</button>
+    <button class="ibtn" title="Enviar archivo" onclick="pickFile()">📎</button>
+    <button class="ibtn" title="Descargar chat" onclick="downloadChat()">⬇️</button>
+    <textarea id="msgInput" placeholder="Escribe a Gumi..." onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendMsg()}"></textarea>
+    <button class="ibtn" id="sendBtn" onclick="sendMsg()">➤</button>
+  </div>
+  <div id="credit">Creado por k4927789-wq · Chat Gumi IA · V2 GitHub Pages</div>
+</div>
+
+<!-- LOGIN -->
+<div id="loginScreen">
+  <div class="login-card">
+    <div style="position:relative;display:inline-block">
+      <img id="avatarPreview" src="https://inmiku.infinityfreeapp.com/u/ImMiku_adddca1a.jpg" alt="Gumi" style="cursor:pointer" onclick="pickLoginAvatar()" title="Toca para poner tu foto de perfil">
+      <span style="position:absolute;bottom:2px;right:2px;background:var(--accent);color:#0e2416;width:24px;height:24px;border-radius:50%;font-size:.85rem;display:flex;align-items:center;justify-content:center;cursor:pointer" onclick="pickLoginAvatar()" title="Elegir foto">📷</span>
+    </div>
+    <h1>♪ Chat Gumi IA ♪</h1>
+    <p>Inicia sesión o crea tu cuenta para guardar tus chats</p>
+    <input id="loginUser" placeholder="Usuario" autocomplete="username">
+    <input id="loginPass" type="password" placeholder="Contraseña" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
+    <button class="btn" onclick="doLogin()">Entrar al chat</button>
+    <div id="loginMsg"></div>
+  </div>
+</div>
+
+<!-- MODAL IMAGEN -->
+<div id="imgModal" class="modal hidden">
+  <span class="closeX" onclick="closeModal()">✕</span>
+  <img id="modalImg" src="" alt="imagen">
+  <div class="row" id="modalRow">
+    <textarea id="modalText" placeholder="Escribe la indicación para Gumi sobre esta imagen..." onkeydown="if(event.key==='Enter')sendModalImage()"></textarea>
+    <button onclick="sendModalImage()">Enviar ➤</button>
+  </div>
+</div>
+
+<div id="toast"></div>
+<input type="file" id="imgPicker" accept="image/*" hidden>
+<input type="file" id="filePicker" hidden>
+<input type="file" id="avatarPicker" accept="image/*" hidden>
+<input type="file" id="avatarChangePicker" accept="image/*" hidden>
+
+<script src="js/script.js"></script>
+</body>
+</html>
